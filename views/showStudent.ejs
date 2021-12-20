@@ -1,0 +1,21 @@
+<!-- SHowing studnet GUI -->
+<button>Add Student</button>
+<table>
+    <tr>
+    <th>Student ID</th>
+    <th>Name</th>
+    <th>Gpa</th>
+    <th>Action</th>
+    </tr>
+    <% students.forEach((student) =>
+    { %>
+    <tr>
+    <td><%= student.sid %></td>
+    <td><%= student.name %></td>
+    <td><%= student.gpa %></td>
+    <td><a href="http://localhost:3000/Liststudents/:student">Delete</a></td>
+    </tr>
+    <% }) %>
+</table>
+<a href="http://localhost:3000/">Home</a> <br>
+    

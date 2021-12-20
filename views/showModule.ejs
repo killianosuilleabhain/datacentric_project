@@ -1,0 +1,22 @@
+<!-- Showing the module GUI -->
+<table>
+    <tr>
+    <th>Module ID</th>
+    <th>Name</th>
+    <th>Credits</th>
+    <th>Update</th>
+    <th>Students</th>
+    </tr>
+    <% modules.forEach((module) =>
+    { %>
+    <tr>
+    <td><%= module.mid %></td>
+    <td><%= module.name %></td>
+    <td><%= module.credits %></td>
+    <td><a href="http://localhost:3000/Liststudents/:student">Update</a></td>
+    <td><a href="http://localhost:3000/Liststudents/:student">List</a></td>
+    </tr>
+    <% }) %>
+</table>
+<a href="http://localhost:3000/">Home</a> <br>
+    
